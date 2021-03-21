@@ -73,6 +73,7 @@
 		8476ECDB26067785004AE32B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8476ECDD26067785004AE32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8476ECF226067A6C004AE32B /* PlateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateModel.swift; sourceTree = "<group>"; };
+		8476ECFD2606D85D004AE32B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 		8476ECB626067783004AE32B = {
 			isa = PBXGroup;
 			children = (
+				8476ECFD2606D85D004AE32B /* README.md */,
 				8476ECC526067784004AE32B /* Plate Calculator WatchKit App */,
 				8476ECD126067785004AE32B /* Plate Calculator WatchKit Extension */,
 				8476ECBE26067784004AE32B /* Products */,
