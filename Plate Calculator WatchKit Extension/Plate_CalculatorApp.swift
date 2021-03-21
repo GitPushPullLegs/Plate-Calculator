@@ -11,9 +11,7 @@ import SwiftUI
 struct Plate_CalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+            PlateView(model: PlateModel())
         }
     }
 }

@@ -10,11 +10,12 @@
 		8476ECC226067784004AE32B /* Plate Calculator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8476ECC126067784004AE32B /* Plate Calculator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8476ECC726067785004AE32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8476ECC626067785004AE32B /* Assets.xcassets */; };
 		8476ECCE26067785004AE32B /* Plate Calculator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8476ECCD26067785004AE32B /* Plate Calculator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8476ECD326067785004AE32B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476ECD226067785004AE32B /* ContentView.swift */; };
+		8476ECD326067785004AE32B /* PlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476ECD226067785004AE32B /* PlateView.swift */; };
 		8476ECD526067785004AE32B /* Plate_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476ECD426067785004AE32B /* Plate_CalculatorApp.swift */; };
 		8476ECD726067785004AE32B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476ECD626067785004AE32B /* ComplicationController.swift */; };
 		8476ECD926067785004AE32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8476ECD826067785004AE32B /* Assets.xcassets */; };
 		8476ECDC26067785004AE32B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8476ECDB26067785004AE32B /* Preview Assets.xcassets */; };
+		8476ECF326067A6C004AE32B /* PlateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476ECF226067A6C004AE32B /* PlateModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +66,13 @@
 		8476ECC626067785004AE32B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8476ECC826067785004AE32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8476ECCD26067785004AE32B /* Plate Calculator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Plate Calculator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8476ECD226067785004AE32B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8476ECD226067785004AE32B /* PlateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateView.swift; sourceTree = "<group>"; };
 		8476ECD426067785004AE32B /* Plate_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plate_CalculatorApp.swift; sourceTree = "<group>"; };
 		8476ECD626067785004AE32B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		8476ECD826067785004AE32B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8476ECDB26067785004AE32B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8476ECDD26067785004AE32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8476ECF226067A6C004AE32B /* PlateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +117,8 @@
 		8476ECD126067785004AE32B /* Plate Calculator WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8476ECD226067785004AE32B /* ContentView.swift */,
+				8476ECD226067785004AE32B /* PlateView.swift */,
+				8476ECF126067A5B004AE32B /* Models */,
 				8476ECD426067785004AE32B /* Plate_CalculatorApp.swift */,
 				8476ECD626067785004AE32B /* ComplicationController.swift */,
 				8476ECD826067785004AE32B /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				8476ECDB26067785004AE32B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8476ECF126067A5B004AE32B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8476ECF226067A6C004AE32B /* PlateModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8476ECD526067785004AE32B /* Plate_CalculatorApp.swift in Sources */,
-				8476ECD326067785004AE32B /* ContentView.swift in Sources */,
+				8476ECD326067785004AE32B /* PlateView.swift in Sources */,
+				8476ECF326067A6C004AE32B /* PlateModel.swift in Sources */,
 				8476ECD726067785004AE32B /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
